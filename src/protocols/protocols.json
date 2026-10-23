@@ -1,0 +1,393 @@
+[
+  {
+    "id": "cpr_cardiac_arrest",
+    "name": "CPR / Cardiac Arrest (Not Breathing / Unresponsive)",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "not breathing", "unresponsive", "cardiac arrest", "no pulse", 
+        "gasping for air", "agonal breathing", "collapsed not breathing", 
+        "heart stopped", "unconscious and not breathing"
+      ],
+      "exclude_symptoms": ["breathing normally"]
+    },
+    "ordered_steps": [
+      "Check responsiveness: Shout 'Can you hear me?' and tap shoulders firmly.",
+      "Check chest: Look at chest for 5 seconds. If NO breathing or only gasping, START CPR IMMEDIATELY.",
+      "Place heel of one hand in the center of the chest (between nipples). Put other hand on top and interlock fingers.",
+      "Push HARD and FAST: 2 inches deep at 100 to 120 beats per minute (use rhythmic metronome below).",
+      "Allow chest to rise fully between each push. Do NOT lean on chest.",
+      "Do NOT stop until emergency services take over or the person moves and breathes normally."
+    ],
+    "never_do": [
+      "DO NOT put water or liquids into mouth.",
+      "DO NOT leave the person alone to search for supplies if you are the only bystander.",
+      "DO NOT delay chest compressions for pulse checks if untrained.",
+      "DO NOT give mouth-to-mouth if untrained or without a mask; perform Hands-Only CPR."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY. Put phone on speaker while beginning compressions.",
+    "source_label": "Based on American Heart Association (AHA) & Red Cross CPR Guidelines",
+    "metronome_bpm": 110
+  },
+  {
+    "id": "chest_pain_heart_attack",
+    "name": "Suspected Heart Attack / Acute Chest Pain",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "chest pain", "chest pressure", "crushing chest pain", "pain radiating to arm", 
+        "left arm pain", "jaw pain", "chest tightness", "heart attack", "profuse sweating and chest pain"
+      ]
+    },
+    "ordered_steps": [
+      "Have the person sit down immediately in a comfortable semi-reclined position (W-position against wall or pillows).",
+      "Loosen any tight clothing around neck, chest, and waist.",
+      "Keep the person strictly calm and motionless. DO NOT let them walk or exert themselves.",
+      "If the person has their OWN prescribed Nitroglycerin or doctor-advised Aspirin (300mg chewable) and has NO stated allergy or bleeding disorder, bystander may assist them to take it.",
+      "Keep phone ready on speaker; monitor breathing and consciousness continuously.",
+      "If the person becomes unresponsive and stops normal breathing, start Hands-Only CPR immediately."
+    ],
+    "never_do": [
+      "DO NOT allow the person to walk, drive themselves to the hospital, or climb stairs.",
+      "DO NOT give Aspirin if the person is allergic, has an active stomach ulcer, or is taking blood thinners.",
+      "DO NOT give caffeinated drinks, food, or water."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY. Every minute counts for heart muscle survival.",
+    "source_label": "Based on WHO / AHA Acute Coronary Syndrome First-Aid Protocols"
+  },
+  {
+    "id": "stroke_fast",
+    "name": "Suspected Stroke (FAST Protocol)",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "facial droop", "slurred speech", "arm weakness", "one side paralyzed", 
+        "loss of speech", "sudden confusion", "stroke", "fast test", "face sagging"
+      ]
+    },
+    "ordered_steps": [
+      "Check F.A.S.T.: Face (ask to smile, one side droops?), Arms (raise both arms, one drifts down?), Speech (repeat a phrase, slurred?), Time (call immediately).",
+      "Note the EXACT time the symptoms were first observed (critical for clot-busting medication).",
+      "Position the person lying down with head and shoulders slightly elevated on a pillow (about 15-30 degrees).",
+      "If unconscious but breathing, turn them onto their side into the Recovery Position to keep airway clear.",
+      "Keep them warm and calm. Reassure them continuously even if they cannot speak.",
+      "Record any blood thinners or diabetes history for the arriving paramedic."
+    ],
+    "never_do": [
+      "DO NOT give Aspirin or any medication (a stroke may be hemorrhagic bleeding, where aspirin can be fatal).",
+      "DO NOT give anything to eat or drink (swallowing muscles are often paralyzed, causing asphyxiation).",
+      "DO NOT let the person sleep or wait to see if it improves."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY. Announce 'Stroke alert' and state the exact symptom onset time.",
+    "source_label": "Based on World Stroke Organization & Red Cross FAST Guidelines"
+  },
+  {
+    "id": "severe_bleeding",
+    "name": "Severe External Bleeding / Hemorrhage",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "severe bleeding", "blood spurting", "arterial bleeding", "heavy blood loss", 
+        "gushing blood", "deep laceration bleeding profusely", "stab wound bleeding"
+      ]
+    },
+    "ordered_steps": [
+      "Expose the wound: quickly remove or cut clothing to see the exact source of bleeding.",
+      "Apply DIRECT FIRM PRESSURE onto the bleeding point with a clean cloth, towel, or sterile dressing using both hands.",
+      "Press HARD and do NOT let go. If blood soaks through, add another cloth on top without removing the first.",
+      "If bleeding is from an arm or leg and direct pressure fails to stop life-threatening spurting blood, apply a commercial tourniquet 2-3 inches above wound (never over a joint).",
+      "Keep the person lying flat and warm (cover with a jacket or blanket) to prevent hypothermic shock.",
+      "Maintain continuous pressure until paramedic arrival."
+    ],
+    "never_do": [
+      "DO NOT remove soaked dressings (this tears away forming blood clots).",
+      "DO NOT remove embedded knives or impaled objects (stabilize them in place with bulky dressings).",
+      "DO NOT apply a makeshift tourniquet like a thin wire or string that cuts tissue.",
+      "DO NOT release pressure to 'peek' if bleeding has stopped."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY while maintaining firm two-handed pressure.",
+    "source_label": "Based on Stop The Bleed & International Federation of Red Cross Protocols"
+  },
+  {
+    "id": "choking_conscious",
+    "name": "Severe Choking / Airway Obstruction (Conscious)",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "choking", "cannot breathe food", "object stuck in throat", "silent cough", 
+        "hands clutching throat", "cannot speak or cough"
+      ]
+    },
+    "ordered_steps": [
+      "Ask: 'Are you choking?' If the person can cough forcefully or speak, encourage them to keep coughing.",
+      "If they CANNOT speak, breathe, or make sound: stand to the side and slightly behind.",
+      "Support their chest with one hand and lean them forward. Deliver 5 SHARP BACK BLOWS between shoulder blades using the heel of your hand.",
+      "If back blows fail: stand behind them, wrap arms around waist, make a fist above the navel (well below ribs), grasp fist with other hand and pull QUICKLY INWARD AND UPWARD (5 abdominal thrusts).",
+      "Alternate 5 back blows and 5 abdominal thrusts until object is dislodged.",
+      "If the person loses consciousness, lower them gently to the floor and start CPR compressions immediately."
+    ],
+    "never_do": [
+      "DO NOT perform blind finger sweeps in the mouth (you may push the object deeper).",
+      "DO NOT give abdominal thrusts to an infant under 1 year (use 5 back slaps and 5 chest thrusts instead).",
+      "DO NOT offer water or liquids to 'wash it down'."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY if back blows fail or person becomes unresponsive.",
+    "source_label": "Based on Red Cross & European Resuscitation Council Choking Protocols"
+  },
+  {
+    "id": "unconscious_breathing",
+    "name": "Unresponsive / Unconscious BUT Breathing Normally",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "unconscious breathing", "fainted breathing normally", "passed out breathing", 
+        "unresponsive but breathing", "drunken stupor breathing"
+      ]
+    },
+    "ordered_steps": [
+      "Kneel beside the person. Ensure both legs are straight.",
+      "Place the arm nearest to you at a right angle to their body, palm facing up.",
+      "Bring their far arm across their chest and hold the back of their hand against the cheek nearest you.",
+      "With your other hand, pull their far knee up and roll them gently towards you onto their side into the Recovery Position.",
+      "Tilt their head back gently to ensure airway stays open and fluids/vomit drain freely.",
+      "Check breathing continuously every 60 seconds until help arrives."
+    ],
+    "never_do": [
+      "DO NOT leave the person lying flat on their back (tongue or vomit can suffocate them).",
+      "DO NOT slap their face, shake them violently, or splash cold water.",
+      "DO NOT place a pillow under their head if it causes chin to bend toward chest."
+    ],
+    "when_to_call": "CALL 112 / 108 immediately for any unexplained unconsciousness.",
+    "source_label": "Based on NHS & Red Cross Recovery Position Guidance"
+  },
+  {
+    "id": "seizure",
+    "name": "Active Seizure / Convulsions",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "seizure", "convulsions", "epileptic fit", "jerking limbs", "foaming at mouth", "eyes rolling back"
+      ]
+    },
+    "ordered_steps": [
+      "Note the time the seizure began (a seizure lasting >5 minutes is a life-threatening medical emergency).",
+      "Clear the area immediately: remove hard, sharp, or hot objects away from the person.",
+      "Place something soft and flat (like a folded jacket) under their head to prevent skull injury.",
+      "Loosen tight neckties or tight clothing around the neck.",
+      "As soon as jerking stops, roll them gently onto their side into the recovery position to prevent choking on saliva.",
+      "Stay with the person calmly until they regain full consciousness and orientation."
+    ],
+    "never_do": [
+      "DO NOT hold the person down or restrain their movements (this causes bone fractures).",
+      "DO NOT put ANY object, spoon, fingers, or cloth into their mouth (they will NOT swallow their tongue).",
+      "DO NOT give food, water, or medication until they are completely alert."
+    ],
+    "when_to_call": "CALL 112 / 108 if seizure lasts >5 minutes, repeats without waking, occurs in water, or the person is pregnant/injured.",
+    "source_label": "Based on Epilepsy Foundation & CDC First Aid for Seizures"
+  },
+  {
+    "id": "burns_thermal",
+    "name": "Severe Burns / Scalds",
+    "urgency": "AMBER",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "burn", "scald", "hot water burn", "fire burn", "skin charred", "blistered burn", "chemical burn"
+      ]
+    },
+    "ordered_steps": [
+      "Ensure scene safety (extinguish fire, disconnect electricity, or isolate chemical).",
+      "Cool the burn IMMEDIATELY under cool running tap water for at least 20 minutes (do NOT use freezing ice).",
+      "Gently remove rings, watches, belts, and loose clothing near the burned area before swelling starts.",
+      "Cover the cooled burn loosely with clean plastic cling wrap or a sterile non-adherent dressing.",
+      "Keep the person warm with a blanket around unaffected areas to prevent hypothermia.",
+      "Monitor for shock: pale skin, cold sweats, or shallow breathing."
+    ],
+    "never_do": [
+      "DO NOT apply ice, ice water, butter, toothpaste, oil, or folk remedies (causes tissue necrosis and infection).",
+      "DO NOT peel away clothing that is melted or stuck to the burn.",
+      "DO NOT burst or puncture blisters."
+    ],
+    "when_to_call": "CALL 112 / 108 if burn is larger than the palm of a hand, on face/hands/groin, causes white/charred skin, or from chemicals/electricity.",
+    "source_label": "Based on WHO Guidelines for Burn Care & British Burn Association"
+  },
+  {
+    "id": "snake_bite",
+    "name": "Suspected Snakebite (Neurotoxic / Hemotoxic)",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "snake bite", "bitten by snake", "fang marks", "viper bite", "cobra bite", "krait bite"
+      ]
+    },
+    "ordered_steps": [
+      "Keep the person strictly STILL and calm. Any physical movement accelerates venom absorption through the lymphatic system.",
+      "Immobilize the bitten limb using a splint or sling at heart level (do NOT elevate above heart).",
+      "Remove rings, bangles, anklets, and tight clothing from the bitten limb immediately before swelling begins.",
+      "If possible, gently wipe the bite site with a clean damp cloth; note the snake's appearance (color/pattern) only if safe, from distance.",
+      "Transport the person IMMEDIATELY to the nearest district hospital having Anti-Snake Venom (ASV).",
+      "Monitor airway and breathing continuously (neurotoxic venoms cause respiratory paralysis)."
+    ],
+    "never_do": [
+      "DO NOT cut, slash, or cauterize the wound.",
+      "DO NOT suck out venom with mouth or vacuum devices (completely ineffective and increases infection).",
+      "DO NOT apply tight arterial tourniquets (causes limb necrosis and amputation).",
+      "DO NOT apply ice, herbal pastes, or electric shocks."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY. State clearly: 'Suspected venomous snakebite, need hospital with Anti-Snake Venom (ASV)'.",
+    "source_label": "Based on WHO Guidelines for the Management of Snakebites in South-East Asia"
+  },
+  {
+    "id": "anaphylaxis",
+    "name": "Severe Allergic Reaction / Anaphylaxis",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "anaphylaxis", "severe allergic reaction", "swollen tongue", "swollen throat", 
+        "hives with difficulty breathing", "bee sting breathing difficulty", "peanut allergy breathing"
+      ]
+    },
+    "ordered_steps": [
+      "Identify epinephrine auto-injector (EpiPen / Adrenaline) if the patient carries their own prescribed device.",
+      "Help the person administer the auto-injector into the outer middle thigh: press firmly until it clicks, hold for 3-5 seconds.",
+      "Have the person lie down flat with legs elevated (unless breathing is very hard, then allow upright sitting).",
+      "Loosen tight clothing around neck and chest.",
+      "If symptoms do not improve after 5-10 minutes and an ambulance hasn't arrived, a second auto-injector dose may be given if available.",
+      "Monitor breathing continuously until medical handover."
+    ],
+    "never_do": [
+      "DO NOT have the person stand up or walk suddenly (can trigger fatal blood pressure collapse).",
+      "DO NOT rely solely on oral antihistamines for airway swelling (epinephrine is the ONLY first-line treatment).",
+      "DO NOT delay calling emergency services even if symptoms seem improved after injection."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY. State 'Severe anaphylactic allergic reaction'.",
+    "source_label": "Based on World Allergy Organization (WAO) & Red Cross Anaphylaxis Protocols"
+  },
+  {
+    "id": "poisoning_overdose",
+    "name": "Suspected Poisoning / Chemical Ingestion / Drug Overdose",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "poisoning", "swallowed poison", "swallowed detergent", "swallowed pesticide", 
+        "drug overdose", "child swallowed medicine", "ingested toxic chemical"
+      ]
+    },
+    "ordered_steps": [
+      "Identify the substance: keep the bottle, pill strip, container, or plant safe for the doctor to examine.",
+      "If the substance is on the skin or eyes, flush immediately with copious clean water for 15 minutes.",
+      "Check alertness and breathing: if unconscious or groggy, place in Recovery Position.",
+      "If the person is awake, wipe any excess poison from lips or mouth with a damp cloth.",
+      "Note the exact time of ingestion and estimated quantity taken.",
+      "Have emergency dispatcher connect to the Poison Control Centre."
+    ],
+    "never_do": [
+      "DO NOT induce vomiting (corrosive acids/bases will burn the esophagus twice and risk fatal aspiration into lungs).",
+      "DO NOT give raw milk, raw eggs, saltwater, or activated charcoal unless explicitly ordered by Poison Control.",
+      "DO NOT wait for symptoms to develop before calling."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY or National Poison Information Centre (1800-116-117 in India).",
+    "source_label": "Based on WHO / National Poison Centre Protocols"
+  },
+  {
+    "id": "heat_stroke",
+    "name": "Severe Heat Stroke / Hyperthermia",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "heat stroke", "extremely hot dry skin", "high body temperature confusion", 
+        "heat exhaustion collapsed", "sunstroke"
+      ]
+    },
+    "ordered_steps": [
+      "Move the person immediately to a cool, shaded, or air-conditioned area.",
+      "Rapidly cool the person: spray or sponge with cool water and fan vigorously.",
+      "Place ice packs or cool wet cloths at armpits, groin, neck, and back (areas with large blood vessels).",
+      "Remove unnecessary outer clothing.",
+      "If the person is conscious and able to swallow normally, provide small sips of cool water or oral rehydration salts (ORS).",
+      "Monitor body temperature and mental status until help arrives."
+    ],
+    "never_do": [
+      "DO NOT give cold fluids to an unconscious or disoriented person (choking hazard).",
+      "DO NOT administer paracetamol or aspirin (ineffective for environmental heat stroke and strains liver/kidneys).",
+      "DO NOT delay aggressive external cooling."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY for hot dry skin, confusion, seizures, or loss of consciousness.",
+    "source_label": "Based on CDC & Wilderness Medical Society Heat Illness Guidelines"
+  },
+  {
+    "id": "fracture_road_accident",
+    "name": "Fracture / Severe Road Accident Trauma",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "road accident", "fracture", "broken bone", "deformed limb", 
+        "bone sticking out", "car crash trauma", "fall from height"
+      ]
+    },
+    "ordered_steps": [
+      "Secure scene safety first: turn on vehicle hazards, set warning triangles, watch for oncoming traffic.",
+      "DO NOT move the casualty unless there is immediate danger (fire, explosion, sinking vehicle).",
+      "Support the head and neck in a neutral line: ask them not to turn head; prevent neck rotation.",
+      "Control any major bleeding by pressing sterile cloth around wounds (avoid pressing protruding bone).",
+      "If a limb is visibly deformed, support it in the position found with rolled blankets or jackets.",
+      "Keep the person calm, still, and covered with a blanket to treat shock."
+    ],
+    "never_do": [
+      "DO NOT attempt to straighten or push back a deformed or broken bone.",
+      "DO NOT remove a motorcycle helmet unless they are not breathing and airway management is impossible.",
+      "DO NOT move the spinal column or twist the back."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY. Request ambulance with spinal board and trauma kit.",
+    "source_label": "Based on Advanced Trauma Life Support (ATLS) Bystander Protocols"
+  },
+  {
+    "id": "drowning",
+    "name": "Submersion / Drowning Resuscitation",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "drowning", "pulled from water", "submerged in water", "water inhalation unconscious"
+      ]
+    },
+    "ordered_steps": [
+      "Remove casualty from water safely without putting yourself in danger (reach or throw, don't go unless trained).",
+      "Lay casualty flat on back on firm ground and check for responsiveness and breathing.",
+      "If NOT breathing normally: give 5 INITIAL RESCUE BREATHS first (airway obstruction from water requires oxygenation).",
+      "If still no response or normal breathing, commence CPR: 30 chest compressions followed by 2 rescue breaths.",
+      "If vomits water, roll onto side to clear mouth, then return to back and resume CPR.",
+      "Remove wet clothes and wrap in dry blankets/jackets to prevent hypothermia."
+    ],
+    "never_do": [
+      "DO NOT attempt the Heimlich maneuver to drain water from lungs (causes vomiting and delays CPR).",
+      "DO NOT stop CPR until medical emergency staff take over.",
+      "DO NOT neglect hypothermia; keep them insulated."
+    ],
+    "when_to_call": "CALL 112 / 108 IMMEDIATELY for any near-drowning or submerged victim.",
+    "source_label": "Based on International Life Saving Federation (ILS) Drowning Resuscitation Protocol"
+  },
+  {
+    "id": "flood_fire_evacuation",
+    "name": "Disaster Evacuation (Flash Flood / Building Fire)",
+    "urgency": "RED",
+    "trigger_conditions": {
+      "any_of_symptoms": [
+        "flood alert", "rising flood waters", "building fire", "smoke filled room", "evacuation order"
+      ]
+    },
+    "ordered_steps": [
+      "EVACUATE IMMEDIATELY: For fire, stay low under smoke (crawl on hands and knees). For flood, move immediately to higher ground.",
+      "Feel door handles with the back of your hand before opening; if HOT, do not open, find alternate exit.",
+      "DO NOT use elevators; use stairwells only.",
+      "Grab emergency essentials only: phone, ID, vital prescription medications, flashlight.",
+      "Never drive or walk into moving floodwater (6 inches of rushing water can knock you down; 12 inches can sweep a car).",
+      "Once outside, stay clear of falling powerlines and gather at a designated assembly point."
+    ],
+    "never_do": [
+      "DO NOT return inside a burning or flooded structure for pets or possessions.",
+      "DO NOT touch wet electrical equipment or standing water near wires.",
+      "DO NOT attempt to cross flooded bridges or roads."
+    ],
+    "when_to_call": "CALL 112 / 101 (Fire) / Disaster Management helpline immediately once safely evacuated.",
+    "source_label": "Based on National Disaster Management Authority (NDMA) & FEMA Protocols"
+  }
+]
